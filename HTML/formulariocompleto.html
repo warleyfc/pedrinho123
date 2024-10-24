@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="/CSS/formulariocompleto.css" />
+  </head>
+  <body>
+    <form
+      method="post"
+      name="formCadastro"
+      action="/PHP/formulariocompleto.php"
+      enctype="multipart/form-data"
+    >
+      <h1>Cadastro de clientes</h1>
+      <table width="80%">
+        <tr>
+          <th width="18%">Nome</th>
+          <td width="82%"><input type="text" name="nome" /></td>
+        </tr>
+
+        <tr>
+          <th>CPF</th>
+          <td><input name="cpf" type="text" maxlength="14" /></td>
+        </tr>
+
+        <tr>
+          <th>Endereço</th>
+          <td>
+            <textarea name="endereco" cols="30" rows="4"> </textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Estado</th>
+          <td>
+            <select name="listaEstado">
+              <option value="BA">Bahia</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="SP">São Paulo</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Data Nasc.</th>
+          <td><input name="data" type="date" /></td>
+        </tr>
+
+        <tr>
+          <th>Sexo</th>
+          <td>
+            <input type="radio" name="sexo" value="M" checked />Masculino<br />
+            <input type="radio" name="sexo" value="F" />Feminino
+          </td>
+        </tr>
+
+        <tr>
+          <th>Áreas de Interresse</th>
+          <td>
+            <input
+              name="checkCinema"
+              type="checkbox"
+              value="false"
+            />Cinema<br />
+            <input
+              name="checkMusica"
+              type="checkbox"
+              value="false"
+            />Música<br />
+            <input
+              name="checkInfo"
+              type="checkbox"
+              value="true"
+            />Informática<br />
+          </td>
+        </tr>
+
+        <tr>
+          <th>Login</th>
+          <td>
+            <input name="login" type="text" />
+          </td>
+        </tr>
+
+        <tr>
+          <th>Senha</th>
+          <td>
+            <input name="senha1" type="password" />
+          </td>
+        </tr>
+
+        <tr>
+          <th>Confirmação de Senha</th>
+          <td>
+            <input name="senha2" type="password" />
+          </td>
+        </tr>
+        <tr>
+          <th>Adicione uma Foto</th>
+          <td><input type="file" name="foto" /></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" name="btnEnviar" value="Enviar" />
+          </td>
+          <td>
+            <input type="reset" name="btnLimpar" value="Limpar" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

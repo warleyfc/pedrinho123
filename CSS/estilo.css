@@ -1,0 +1,17 @@
+p {
+  color: blue;
+  background-color: brown;
+  text-align: center;
+  text-decoration: underline;
+}
+body {
+  background-image: url(/IMAGENS/Only\ Fans\ Yago.png);
+  background-repeat: no-repeat;
+}
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border-top: 2px solid turquoise;
+  border-bottom: 5px dashed rebeccapurple;
+  border-left: 9px groove darkolivegreen;
+  border-right: 20px solid yellowgreen;
+}

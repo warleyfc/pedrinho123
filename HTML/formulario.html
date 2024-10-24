@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <center>
+      <h3 style="color: brown">Formulário</h3>
+      <form method="post" action="envio_dados.html">
+        <input
+          type="text"
+          name="Nome"
+          placeholder="Digite seu Nome"
+          required
+        /><br /><br />
+
+        <input
+          type="text"
+          name="cidade"
+          placeholder="Digite sua Cidade"
+          required
+        /><br /><br />
+
+        <input
+          type="text"
+          name="Genero"
+          placeholder="Digite seu Genero"
+          required
+        /><br /><br />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Digite seu e-mail"
+        /><br /><br />
+        <input
+          type="tel"
+          name="tel"
+          placeholder="Digite seu telefone"
+        /><br /><br />
+
+        <script>
+          function msg() {
+            alert("Obrigado pelos dados!");
+          }
+        </script>
+
+        <p style="color: brown">Informe qual seu meio de locomoção</p>
+        <input type="checkbox" name="veiculo1" value="bicicleta" />Eu tenho uma
+        bicicleta<br />
+        <input type="checkbox" name="veiculo2" value="carro" />Eu tenho um
+        carro<br />
+        <input type="checkbox" name="veiculo3" value="moto" />Eu tenho uma
+        moto<br />
+        Selecione sua cor preferida:
+        <input type="color" name="favcor" value="#0000FF" /><br /><br />
+
+        <input type="file" name="arquivos" /><br /><br />
+
+        <input type="date" name="Nascimento" /><br />
+
+        <p style="color: brown">Qual sua idade?</p>
+
+        <input type="radio" name="idade" value="18_22" />18 a 22 <br />
+        <input type="radio" name="idade" value="23_30" />23 a 30 <br />
+        <input type="radio" name="idade" value="mais31" />acima de 31<br /><br />
+
+        <input type="button" value="Enviar" onclick="msg()" />
+      </form>
+    </center>
+  </body>
+</html>
